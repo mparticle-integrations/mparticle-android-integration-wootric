@@ -102,6 +102,26 @@ public class WootricKit extends KitIntegration implements KitIntegration.Attribu
     }
 
     @Override
+    public void setUserAttributeList(String s, List<String> list) {
+
+    }
+
+    @Override
+    public boolean supportsAttributeLists() {
+        return false;
+    }
+
+    @Override
+    public void setAllUserAttributes(Map<String, String> attributes, Map<String, List<String>> attributeLists) {
+        endUserProperties = new HashMap<String, String>();
+        for (Map.Entry<String, String> entry : attributes.entrySet()) {
+            prepareEndUserProperties(entry.getKey(), entry.getValue());
+        }
+        if (wootric != null) {
+            wootric.setProperties(endUserProperties);
+        }
+    }
+    @Override
     public void removeUserAttribute(String key) {
         if (wootric != null && endUserProperties != null && endUserProperties.remove(KitUtils.sanitizeAttributeKey(key)) != null) {
             wootric.setProperties(endUserProperties);
