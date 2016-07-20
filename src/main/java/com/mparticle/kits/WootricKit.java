@@ -49,7 +49,8 @@ public class WootricKit extends KitIntegration implements KitIntegration.Attribu
 
     @Override
     protected List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
-        getInstance();
+        //it's important the Wootric is not initialized until the hosting app calls getInstance, with
+        //the correct Activity
         return null;
     }
 
