@@ -17,5 +17,5 @@ android {
 }
 
 dependencies {
-    compile 'com.wootric:wootric-sdk-android:2.3.0'
+    compile 'com.wootric:wootric-sdk-android:2.4.7'
 }
