@@ -51,6 +51,11 @@ public class WootricKit extends KitIntegration implements KitIntegration.Attribu
     protected List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
         //it's important the Wootric is not initialized until the hosting app calls getInstance, with
         //the correct Activity
+        if (KitUtils.isEmpty(settings.get(CLIENT_ID)) ||
+                KitUtils.isEmpty(CLIENT_SECRET) ||
+                KitUtils.isEmpty(ACCOUNT_TOKEN)) {
+            throw new IllegalArgumentException("Wootric missing required settings and will not start.");
+        }
         return null;
     }
 
