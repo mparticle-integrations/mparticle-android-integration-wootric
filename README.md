@@ -8,7 +8,7 @@ This repository contains the [Wootric](https://www.wootric.com) integration for 
 
     ```groovy
     dependencies {
-        compile 'com.mparticle:android-wootric-kit:4+'
+        compile 'com.mparticle:android-wootric-kit:5+'
     }
     ```
 2. Follow the mParticle Android SDK [quick-start](https://github.com/mParticle/mparticle-android-sdk), then rebuild and launch your app, and verify that you see `"Wootric detected"` in the output of `adb logcat`.
