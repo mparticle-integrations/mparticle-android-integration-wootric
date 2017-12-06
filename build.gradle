@@ -17,5 +17,5 @@ android {
 }
 
 dependencies {
-    compile 'com.wootric:wootric-sdk-android:2.5.2'
+    api 'com.wootric:wootric-sdk-android:2.5.2'
 }
