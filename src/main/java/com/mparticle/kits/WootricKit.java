@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.mparticle.MParticle;
+import com.mparticle.kits_core.KitIntegration;
+import com.mparticle.kits_core.ReportingMessage;
 import com.wootric.androidsdk.Wootric;
 
 import java.lang.ref.WeakReference;
@@ -11,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class WootricKit extends KitIntegration implements KitIntegration.AttributeListener {
+public class WootricKit extends AbstractKitIntegration implements KitIntegration.AttributeListener {
     private static final String CLIENT_ID = "clientId";
     private static final String CLIENT_SECRET = "clientSecret";
     private static final String ACCOUNT_TOKEN = "accountToken";
@@ -48,7 +50,7 @@ public class WootricKit extends KitIntegration implements KitIntegration.Attribu
     }
 
     @Override
-    protected List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
+    public List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
         //it's important the Wootric is not initialized until the hosting app calls getInstance, with
         //the correct Activity
         if (KitUtils.isEmpty(settings.get(CLIENT_ID)) ||
