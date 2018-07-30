@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.mparticle.MParticle;
-import com.mparticle.kits_core.KitIntegration;
-import com.mparticle.kits_core.ReportingMessage;
+import com.mparticle.kits.core.KitIntegration;
+import com.mparticle.kits.core.ReportingMessage;
 import com.wootric.androidsdk.Wootric;
 
 import java.lang.ref.WeakReference;
