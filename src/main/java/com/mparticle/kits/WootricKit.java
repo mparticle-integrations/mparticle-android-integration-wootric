@@ -31,7 +31,6 @@ public class WootricKit extends KitIntegration implements KitIntegration.Attribu
                 wootric = Wootric.init(
                         activity,
                         getSettings().get(CLIENT_ID),
-                        getSettings().get(CLIENT_SECRET),
                         getSettings().get(ACCOUNT_TOKEN));
 
                 wootric.setProperties(endUserProperties);
