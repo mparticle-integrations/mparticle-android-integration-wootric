@@ -16,7 +16,7 @@ This repository contains the [Wootric](https://www.wootric.com) integration for 
 
 ### Documentation
 
-[Wootric integration](http://docs.mparticle.com/?java#wootric)
+[Wootric integration](https://docs.mparticle.com/integrations/wootric/event/)
 
 ### License
 
