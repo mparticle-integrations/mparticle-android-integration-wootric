@@ -116,7 +116,6 @@ class WootricKit : KitIntegration(), AttributeListener {
         if (endUserProperties == null) {
             endUserProperties = HashMap()
         }
-
     }
 
     companion object {
