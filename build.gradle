@@ -40,5 +40,5 @@ android {
 }
 
 dependencies {
-    api 'com.wootric:wootric-sdk-android:2.23.0'
+    api 'com.wootric:wootric-sdk-android:2.24.2'
 }
