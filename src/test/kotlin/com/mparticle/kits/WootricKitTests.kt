@@ -8,7 +8,7 @@ import org.mockito.Mockito
 
 class WootricKitTests {
     private val kit: KitIntegration
-         get() = WootricKit()
+        get() = WootricKit()
 
     @Test
     @Throws(Exception::class)
